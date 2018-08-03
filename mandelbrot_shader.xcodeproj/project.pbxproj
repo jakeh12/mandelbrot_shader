@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		672295682113E7D40014335E /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 672295672113E7D40014335E /* main.c */; };
+		672295702113E86B0014335E /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6722956F2113E86B0014335E /* OpenGL.framework */; };
+		672295722113E8700014335E /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 672295712113E8700014335E /* GLUT.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,8 @@
 /* Begin PBXFileReference section */
 		672295642113E7D40014335E /* mandelbrot_shader */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = mandelbrot_shader; sourceTree = BUILT_PRODUCTS_DIR; };
 		672295672113E7D40014335E /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		6722956F2113E86B0014335E /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		672295712113E8700014335E /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +36,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				672295722113E8700014335E /* GLUT.framework in Frameworks */,
+				672295702113E86B0014335E /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +49,7 @@
 			children = (
 				672295662113E7D40014335E /* mandelbrot_shader */,
 				672295652113E7D40014335E /* Products */,
+				6722956E2113E86B0014335E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +67,15 @@
 				672295672113E7D40014335E /* main.c */,
 			);
 			path = mandelbrot_shader;
+			sourceTree = "<group>";
+		};
+		6722956E2113E86B0014335E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				672295712113E8700014335E /* GLUT.framework */,
+				6722956F2113E86B0014335E /* OpenGL.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
